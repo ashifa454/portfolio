@@ -1,0 +1,20 @@
+.project-page {
+    background: #ffffff;
+}
+
+.project-page .section-1 {
+    background: #0a3d62
+}
+
+.project-page .section-1 .title {
+    padding: 0 0;
+    top: 60%;
+    left: 35%;
+    transform: translate(-35%, -60%)
+}
+
+.project-page .section-1 .title {
+    font-family: 'Vollkorn', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}

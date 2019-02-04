@@ -1,0 +1,120 @@
+.page {
+    background: #41295a;
+    background: -webkit-linear-gradient(to right, #2F0743, #41295a);
+    background: linear-gradient(to right, #2F0743, #41295a);
+}
+
+.section-1 {
+    position: relative;
+}
+
+.section-1 .title {
+    padding: 0 15rem;
+    position: absolute;
+    top: 42%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.section-1 div svg {
+    transform: scale(2.5);
+
+}
+
+.section-1 .actions {
+    position: absolute;
+    padding: 0 6rem;
+    top: 60%;
+    font-family: 'Bangers', cursive;
+}
+
+.section-1 .actions a {
+    text-decoration: none;
+    letter-spacing: 1.9px;
+}
+
+.section-1 .actions a {
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.09);
+}
+
+span {
+    display: block;
+    padding: 10px
+}
+
+.section-1 .actions a::before,
+.section-1 .actions a::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+}
+
+span::before,
+span::after {
+    content: "";
+    width: 2px;
+    height: 0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+}
+
+.section-1 .actions a:hover::before,
+.section-1 .actions a:hover::after {
+    width: 100%;
+}
+
+.section-1 .actions a:hover span::before,
+.section-1 .actions a:hover span::after {
+    height: 100%;
+}
+
+/*----- button 1 -----*/
+.btn::before,
+.btn::after {
+    transition-delay: 0.2s;
+}
+
+.btn span::before,
+.btn span::after {
+    transition-delay: 0s;
+}
+
+.btn::before {
+    right: 0;
+    top: 0;
+}
+
+.btn::after {
+    left: 0;
+    bottom: 0;
+}
+
+.btn span::before {
+    left: 0;
+    top: 0;
+}
+
+.btn span::after {
+    right: 0;
+    bottom: 0;
+}
+
+.btn:hover::before,
+.btn:hover::after {
+    transition-delay: 0s;
+}
+
+.btn:hover span::before,
+.btn:hover span::after {
+    transition-delay: 0.2s;
+}
